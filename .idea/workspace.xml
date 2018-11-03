@@ -11,6 +11,17 @@
   <component name="ChangeListManager">
     <list default="true" id="57445c9b-e861-4831-81e2-ed0e9567244a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/FontLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/FontLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt$loadScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt$loadScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt$loadScreen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt$loadScreen$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/NPCSpriteLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/NPCSpriteLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/OverworldSpriteLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/OverworldSpriteLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/PlayerSpritesLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/PlayerSpritesLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/maps/caves/cH8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/maps/caves/cH8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +36,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="loader.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/main.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="124" selection-start-line="124" selection-end-line="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Entity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loader.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+            <state relative-caret-position="382">
+              <caret line="278" column="55" selection-start-line="278" selection-start-column="55" selection-end-line="278" selection-end-column="55" />
               <folding>
                 <element signature="e#34#812#0" expanded="true" />
               </folding>
@@ -37,25 +75,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metaData_overworld.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/gfx/sprites/metaData_overworld.txt">
+      <file leaf-file-name="cH8.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/maps/caves/cH8.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
+            <state relative-caret-position="247">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overworld_extended2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/gfx/sprites/overworld_extended2.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="Screen.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2335">
+              <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+              <folding>
+                <element signature="e#41#665#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="cH8.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/maps/caves/cH8.txt">
+      <file leaf-file-name="DrawHandler.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/drawing/DrawHandler.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="-283">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -81,6 +126,7 @@
       <find>37</find>
       <find>86</find>
       <find>println</find>
+      <find>current</find>
     </findStrings>
     <replaceStrings>
       <replace>true</replace>
@@ -112,18 +158,18 @@
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/interacables/Portal.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/Entity.kt" />
-        <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/interacables/NPC.kt" />
-        <option value="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" />
-        <option value="$PROJECT_DIR$/res/maps/caves/cH8.txt" />
         <option value="$PROJECT_DIR$/res/gfx/sprites/metaData_overworld.txt" />
+        <option value="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" />
+        <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt" />
+        <option value="$PROJECT_DIR$/res/maps/caves/cH8.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="327" />
-    <option name="y" value="-9" />
+    <option name="x" value="-163" />
+    <option name="y" value="-13" />
     <option name="width" value="2420" />
     <option name="height" value="1307" />
   </component>
@@ -336,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541236410195</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added the Ability of placing invisible Blocks in the World">
+      <created>1541236441209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541236441209</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -345,18 +398,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49951172" visible="true" weight="0.32413793" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4951172" weight="0.32413793" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5004883" side_tool="true" visible="true" weight="0.32413793" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5053711" side_tool="true" visible="true" weight="0.31428573" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49951172" weight="0.31428573" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4946289" visible="true" weight="0.31428573" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32906404" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2109375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2109375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -583,13 +636,6 @@
     <entry file="file://$PROJECT_DIR$/res/gfx/font/font.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1812">
-          <caret line="167" column="74" selection-start-line="167" selection-start-column="74" selection-end-line="167" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/gfx/sprites/NPCs.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -597,13 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="1490" selection-start-line="1490" selection-end-line="1490" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
@@ -628,47 +667,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Entity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/gfx/sprites/overworld_extended1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/res/gfx/sprites/overworld.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/maps/caves/cH8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/drawing/DrawHandler.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/base/GameObject.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Tile.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="e#37#190#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,23 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/gfx/sprites/metaData_overworld.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/gfx/sprites/overworld_extended2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/collections/Collections.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -703,13 +694,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Tile.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="e#37#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/gfx/sprites/overworld_extended2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/gfx/sprites/metaData_overworld.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="85" column="4" selection-start-line="85" selection-end-line="85" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/drawing/DrawHandler.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Entity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2335">
+          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+          <folding>
+            <element signature="e#41#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+        <state relative-caret-position="382">
+          <caret line="278" column="55" selection-start-line="278" selection-start-column="55" selection-end-line="278" selection-end-column="55" />
           <folding>
             <element signature="e#34#812#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/maps/caves/cH8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>

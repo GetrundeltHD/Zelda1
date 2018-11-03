@@ -6,9 +6,7 @@ import me.getrundelthd.main.drawing.TILES_PER_ROW
 import me.getrundelthd.main.drawing.WINDOW_HEIGHT
 import me.getrundelthd.main.drawing.WINDOW_WIDTH
 import me.getrundelthd.main.engine.*
-import me.getrundelthd.main.engine.base.GameObject
 import me.getrundelthd.main.engine.interacables.Portal
-import me.getrundelthd.main.engine.interacables.currentEnteringTime
 import me.getrundelthd.main.io.OverworldSpriteLoader
 import me.getrundelthd.main.io.loadScreen
 import me.getrundelthd.main.mainGameState
@@ -18,16 +16,25 @@ import kotlin.math.abs
 class Screen {
 
     val tiles: Array<Tile>
-    val enemies: Array<Entity>?
-    val pointers : Array<String>
-    val portals : Array<Portal>?
+    val enemies: List<Entity>
+    val pointers: Array<String>
+    val portals: List<Portal>
+    val extraTiles: List<Tile>
+    val allTiles: List<Tile>
 
-
-    constructor(tiles: Array<Tile>, enemies: Array<Entity>?, pointers: Array<String>, portals : Array<Portal>?) {
+    constructor(tiles: Array<Tile>, extraTiles: List<Tile>, enemies: List<Entity>,
+                pointers: Array<String>, portals: List<Portal>) {
         this.tiles = tiles
         this.enemies = enemies
         this.pointers = pointers
         this.portals = portals
+        this.extraTiles = extraTiles
+
+        val temp = mutableListOf<Tile>()
+        temp.addAll(tiles)
+        temp.addAll(extraTiles)
+        this.allTiles = temp
+
     }
 
     constructor() {
@@ -37,9 +44,11 @@ class Screen {
             Tile(x, y, OverworldSpriteLoader.sprites[2])
         }
 
-        enemies = null
-        portals = null
+        enemies = listOf()
+        portals = listOf()
         pointers = arrayOf("@None", "@None", "@None", "@None")
+        extraTiles = listOf()
+        allTiles = listOf()
     }
 }
 
@@ -55,15 +64,16 @@ class ScreenManager(var current: Screen, val player: Player) {
 
     fun update(delta: Double) {
 
+
         when (mainGameState) {
 
             GAMESTATE.MAIN -> {
 
-                current.enemies?.forEach {it.update(delta)}
+                current.enemies.forEach { it.update(delta) }
 
-                current.portals?.forEach {
-                    if(player.hitbox.intersects(it.hitbox))
-                        it.teleport(current.tiles)
+                current.portals.forEach {
+                    if (player.hitbox.intersects(it.hitbox))
+                        it.teleport(current.allTiles.toTypedArray())
                 }
 
                 when {
@@ -98,7 +108,7 @@ class ScreenManager(var current: Screen, val player: Player) {
                     offSetY = 0.0
 
                     // set the player location so that the transition don't triggers immediately again
-                    when(dir) {
+                    when (dir) {
                         DIR.EAST -> player.x = 1.0
                         DIR.WEST -> player.x = WINDOW_WIDTH - player.hitbox.width - 1.0
                         DIR.NORTH -> player.y = WINDOW_HEIGHT - player.hitbox.height - 1.0
@@ -164,15 +174,15 @@ class ScreenManager(var current: Screen, val player: Player) {
 
     fun initNewScreen() {
         drawHandler.objects.addAll(current.tiles)
-        if(current.enemies != null)
-            drawHandler.objects.addAll(current.enemies as Array<out Entity>)
+        drawHandler.objects.addAll(current.extraTiles)
+        drawHandler.objects.addAll(current.enemies)
 
     }
 
     fun destroyScreen() {
         drawHandler.objects.removeAll(current.tiles)
-        if(current.enemies != null)
-            drawHandler.objects.removeAll(current.enemies as Array<out Entity>)
+        drawHandler.objects.removeAll(current.extraTiles)
+        drawHandler.objects.removeAll(current.enemies)
     }
 
     private fun transition(dir: DIR) {
@@ -192,7 +202,7 @@ class ScreenManager(var current: Screen, val player: Player) {
         }
 
         // load the next screen
-        next = loadScreen(Paths.get("res", "maps", "overworld","${current.pointers[index]}.txt"))
+        next = loadScreen(Paths.get("res", "maps", "overworld", "${current.pointers[index]}.txt"))
 
         // offset the tile cords of the next screen
         when (dir) {

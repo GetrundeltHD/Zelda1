@@ -98,7 +98,7 @@ fun update(delta : Double) {
         }
         GAMESTATE.CAVE_ENTERING -> {
 
-            val activePortal = scrManager.current.portals!!.filter { it.entered }[0]
+            val activePortal = scrManager.current.portals.filter { it.entered }[0]
             if(currentEnteringTime >= CAVE_ENTERING_TIME) {
                 // set new screen to cave
                 scrManager.destroyScreen()
@@ -121,7 +121,7 @@ fun update(delta : Double) {
             }
         }
         GAMESTATE.MAIN -> {
-            player._tiles = scrManager.current.tiles.asList()
+            player._tiles = scrManager.current.allTiles
             player.update(delta)
             scrManager.update(delta)
         }

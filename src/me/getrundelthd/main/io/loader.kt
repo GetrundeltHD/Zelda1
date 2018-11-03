@@ -263,11 +263,11 @@ fun loadScreen(p: Path): Screen {
         }
 
         fun loadInvisBlock(data: List<String>): List<Tile> {
-            val posX = data[1].toInt() * TILE_SIZE
-            val invisSprite = OverworldSpriteLoader.sprites[87]
+            val posY = data[2].toInt() * TILE_SIZE
+            val invisSprite = OverworldSpriteLoader.sprites[86]
 
-            if (data[2].contains("[")) {
-                val posData = data[2]
+            if (data[1].contains("[")) {
+                val posData = data[1]
                         .replace("[", "")
                         .replace("]", "")
                         .split("-")
@@ -276,14 +276,15 @@ fun loadScreen(p: Path): Screen {
                 val blocks = mutableListOf<Tile>()
 
                 for (i in posData[0] until posData[1]) {
-                    blocks.add(Tile(posX * TILE_SIZE, i * TILE_SIZE, invisSprite))
+                    blocks.add(Tile(i * TILE_SIZE, posY, invisSprite))
                 }
+
+                println(blocks)
 
                 return blocks
             } else {
-                val posY = data[2].toDouble() * TILE_SIZE
-
-                return listOf(Tile(posX.toInt(), posY.toInt(), invisSprite))
+                val posX = data[1].toInt() * TILE_SIZE
+                return listOf(Tile(posX, posY, invisSprite))
             }
         }
 
@@ -300,10 +301,7 @@ fun loadScreen(p: Path): Screen {
             line = reader.readLine()
         }
 
-        return Screen(tiles as Array<Tile>, entities.toTypedArray(), mapPointers.toTypedArray(), when (portals.size) {
-            0 -> null
-            else -> portals.toTypedArray()
-        })
+        return Screen(tiles as Array<Tile>, extraTiles, entities, mapPointers.toTypedArray(), portals)
     } catch (e: Exception) {
         e.printStackTrace()
         return Screen()
