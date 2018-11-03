@@ -163,6 +163,7 @@ private fun loadSprite(b: BufferedImage, location: Rectangle): BufferedImage {
     @map_type
     mappointer N ,mappointer E ,mappointer S ,mappointer W [or @None]
     tile ids...
+    invis blocks x[can be range] y
     portal specs (p posx posy offset screen)
     npc specs (npc posx posy indexSprite text[_ = space, | = newLine])
 
@@ -266,23 +267,26 @@ fun loadScreen(p: Path): Screen {
             val posY = data[2].toInt() * TILE_SIZE
             val invisSprite = OverworldSpriteLoader.sprites[86]
 
-            if (data[1].contains("[")) {
-                val posData = data[1]
-                        .replace("[", "")
-                        .replace("]", "")
-                        .split("-")
-                        .map { it.toInt() }
+            when {
+                data[1].contains("[") -> {
+                    val posData = data[1]
+                            .replace("[", "")
+                            .replace("]", "")
+                            .split("-")
+                            .map { it.toInt() }
 
-                val blocks = mutableListOf<Tile>()
+                    val blocks = mutableListOf<Tile>()
 
-                for (i in posData[0] until posData[1]) {
-                    blocks.add(Tile(i * TILE_SIZE, posY, invisSprite))
+                    for (i in posData[0] until posData[1]) {
+                        blocks.add(Tile(i * TILE_SIZE, posY, invisSprite))
+                    }
+
+                    return blocks
                 }
-
-                return blocks
-            } else {
-                val posX = data[1].toInt() * TILE_SIZE
-                return listOf(Tile(posX, posY, invisSprite))
+                else -> {
+                    val posX = data[1].toInt() * TILE_SIZE
+                    return listOf(Tile(posX, posY, invisSprite))
+                }
             }
         }
 
