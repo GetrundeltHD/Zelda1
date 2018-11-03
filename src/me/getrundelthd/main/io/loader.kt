@@ -279,8 +279,6 @@ fun loadScreen(p: Path): Screen {
                     blocks.add(Tile(i * TILE_SIZE, posY, invisSprite))
                 }
 
-                println(blocks)
-
                 return blocks
             } else {
                 val posX = data[1].toInt() * TILE_SIZE
