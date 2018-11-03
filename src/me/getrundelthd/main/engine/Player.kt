@@ -1,5 +1,7 @@
 package me.getrundelthd.main.engine
 
+import me.getrundelthd.main.console
+import me.getrundelthd.main.drawHandler
 import me.getrundelthd.main.mainGameState
 import me.getrundelthd.main.utils.flip
 import java.awt.Color
@@ -12,11 +14,14 @@ import java.awt.event.KeyListener
 import java.awt.image.BufferedImage
 
 const val PLAYER_SPEED = 6.0
+const val CONSOLE_COOLDOWN = 20.0
 
 class Player(x: Double, y: Double, sprites: Array<BufferedImage>) :
         Entity(x, y, ENTITY_SIZE, ENTITY_SIZE, 0, sprites) {
 
-    val animator : Animator
+    val animator: Animator
+
+    var consoleTimer = CONSOLE_COOLDOWN
 
     init {
         val animSprites = arrayOf(
@@ -60,40 +65,55 @@ class Player(x: Double, y: Double, sprites: Array<BufferedImage>) :
 
     override fun update(delta: Double) {
 
-        if(mainGameState == GAMESTATE.MAIN) {
-            when {
-                PlayerInputHandler.ioStates[VK_W] ||
-                        PlayerInputHandler.ioStates[VK_UP] -> {
-                    velX = 0.0
-                    velY = -PLAYER_SPEED
-                }
+        when (mainGameState) {
+            GAMESTATE.MAIN -> {
 
-                PlayerInputHandler.ioStates[VK_A] ||
-                        PlayerInputHandler.ioStates[VK_LEFT] -> {
-                    velX = -PLAYER_SPEED
-                    velY = 0.0
-                }
+                if(consoleTimer <= CONSOLE_COOLDOWN)
+                    consoleTimer += delta
 
-                PlayerInputHandler.ioStates[VK_D] ||
-                        PlayerInputHandler.ioStates[VK_RIGHT] -> {
-                    velX = PLAYER_SPEED
-                    velY = 0.0
-                }
+                when {
+                    PlayerInputHandler.ioStates[VK_W] ||
+                            PlayerInputHandler.ioStates[VK_UP] -> {
+                        velX = 0.0
+                        velY = -PLAYER_SPEED
+                    }
 
-                PlayerInputHandler.ioStates[VK_S] ||
-                        PlayerInputHandler.ioStates[VK_DOWN] -> {
-                    velX = 0.0
-                    velY = PLAYER_SPEED
-                }
+                    PlayerInputHandler.ioStates[VK_A] ||
+                            PlayerInputHandler.ioStates[VK_LEFT] -> {
+                        velX = -PLAYER_SPEED
+                        velY = 0.0
+                    }
 
-                else -> {
-                    velX = 0.0
-                    velY = 0.0
+                    PlayerInputHandler.ioStates[VK_D] ||
+                            PlayerInputHandler.ioStates[VK_RIGHT] -> {
+                        velX = PLAYER_SPEED
+                        velY = 0.0
+                    }
+
+                    PlayerInputHandler.ioStates[VK_S] ||
+                            PlayerInputHandler.ioStates[VK_DOWN] -> {
+                        velX = 0.0
+                        velY = PLAYER_SPEED
+                    }
+
+                    PlayerInputHandler.ioStates[VK_CONTROL] -> {
+                        if (consoleTimer >= CONSOLE_COOLDOWN) {
+                            mainGameState = GAMESTATE.CONSOLE
+                            drawHandler.UI_Elements.add(console)
+                            drawHandler.addKeyListener(console.consoleHandler)
+                        }
+                    }
+
+                    else -> {
+                        velX = 0.0
+                        velY = 0.0
+                    }
                 }
             }
-        } else {
-            velX = 0.0
-            velY = 0.0
+            else -> {
+                velX = 0.0
+                velY = 0.0
+            }
         }
 
         super.update(delta)

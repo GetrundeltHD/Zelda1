@@ -5,7 +5,9 @@ import me.getrundelthd.main.blackPerc
 import me.getrundelthd.main.currFps
 import me.getrundelthd.main.engine.GAMESTATE
 import me.getrundelthd.main.engine.Player
+import me.getrundelthd.main.engine.base.Console
 import me.getrundelthd.main.engine.base.GameObject
+import me.getrundelthd.main.engine.base.UI
 import me.getrundelthd.main.mainGameState
 import java.awt.Canvas
 import java.awt.Color
@@ -30,6 +32,8 @@ class DrawHandler : Canvas() {
     val window = JFrame()
     val objects = CopyOnWriteArrayList<GameObject>()
     val pane = JPanel()
+
+    val UI_Elements = CopyOnWriteArrayList<UI>()
 
     init {
         window.title = "The Legend of Zelda"
@@ -85,6 +89,8 @@ class DrawHandler : Canvas() {
         objects.forEach {
             it?.draw(g)
         }
+
+        UI_Elements.forEach { it.draw(g) }
 
         if(mainGameState == GAMESTATE.START) {
             drawStartRect(blackPerc)

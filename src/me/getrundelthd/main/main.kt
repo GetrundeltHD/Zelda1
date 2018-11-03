@@ -6,11 +6,8 @@ import me.getrundelthd.main.drawing.TILES_PER_ROW
 import me.getrundelthd.main.engine.GAMESTATE
 import me.getrundelthd.main.engine.Player
 import me.getrundelthd.main.engine.interacables.CAVE_ENTERING_TIME
-import me.getrundelthd.main.engine.interacables.NPC
 import me.getrundelthd.main.engine.interacables.currentEnteringTime
 import me.getrundelthd.main.engine.map.ScreenManager
-import me.getrundelthd.main.io.FontLoader
-import me.getrundelthd.main.io.OverworldSpriteLoader
 import me.getrundelthd.main.io.PlayerSpritesLoader
 import me.getrundelthd.main.io.loadScreen
 import java.nio.file.Paths
@@ -25,6 +22,8 @@ val player = Player((TILES_PER_ROW / 2 * TILE_SIZE).toDouble(),
 
 val s = loadScreen(Paths.get("res", "maps", "overworld", "H8.txt"))
 val scrManager = ScreenManager(s, player)
+
+val console = me.getrundelthd.main.engine.base.Console()
 
 var currFps = 0
 // TODO: set game state to start when played first time on save state
@@ -87,6 +86,11 @@ fun update(delta : Double) {
         GAMESTATE.MENU -> {
 
         }
+
+        GAMESTATE.CONSOLE -> {
+            console.update(delta)
+        }
+
         GAMESTATE.START -> {
             blackPerc -= delta
             if(blackPerc <= 0.0)
