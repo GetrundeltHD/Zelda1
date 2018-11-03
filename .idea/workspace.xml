@@ -10,18 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57445c9b-e861-4831-81e2-ed0e9567244a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/todo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/FontLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/FontLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt$loadScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt$loadScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt$loadScreen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt$loadScreen$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/LoaderKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/NPCSpriteLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/NPCSpriteLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/OverworldSpriteLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/OverworldSpriteLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/PlayerSpritesLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/io/PlayerSpritesLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/caves/cH8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/maps/caves/cH8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/map/Screen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/map/Screen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/map/ScreenManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/map/ScreenManager.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,62 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt">
+      <file leaf-file-name="todo" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/todo">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="98" column="15" lean-forward="true" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Entity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loader.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="278" column="55" selection-start-line="278" selection-start-column="55" selection-end-line="278" selection-end-column="55" />
-              <folding>
-                <element signature="e#34#812#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cH8.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/maps/caves/cH8.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Screen.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2335">
-              <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
-              <folding>
-                <element signature="e#41#665#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrawHandler.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/drawing/DrawHandler.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-283">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="95">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -164,6 +106,7 @@
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt" />
         <option value="$PROJECT_DIR$/res/maps/caves/cH8.txt" />
+        <option value="$PROJECT_DIR$/todo" />
       </list>
     </option>
   </component>
@@ -389,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541236441209</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added the Ability of placing invisible Blocks in the World (finished)">
+      <created>1541239925196</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541239925196</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -398,13 +348,13 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4951172" weight="0.32413793" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4946289" weight="0.32413793" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5053711" side_tool="true" visible="true" weight="0.31428573" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5058594" side_tool="true" visible="true" weight="0.31428573" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4946289" visible="true" weight="0.31428573" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49414062" visible="true" weight="0.31428573" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32906404" />
       <window_info id="Capture Tool" order="6" />
@@ -459,7 +409,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the Ability of placing invisible Blocks in the World" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the Ability of placing invisible Blocks in the World" />
+    <MESSAGE value="Added the Ability of placing invisible Blocks in the World (finished)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the Ability of placing invisible Blocks in the World (finished)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -467,7 +418,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/maps/map1.txt" />
     <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/drawing/DrawHandler.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -721,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Entity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2335">
@@ -738,10 +681,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/main.kt">
+    <entry file="file://$PROJECT_DIR$/res/maps/caves/cH8.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="247">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="278" column="55" selection-start-line="278" selection-start-column="55" selection-end-line="278" selection-end-column="55" />
+          <folding>
+            <element signature="e#34#812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Entity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -752,20 +712,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt">
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="278" column="55" selection-start-line="278" selection-start-column="55" selection-end-line="278" selection-end-column="55" />
-          <folding>
-            <element signature="e#34#812#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="363">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/maps/caves/cH8.txt">
+    <entry file="file://$PROJECT_DIR$/todo">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
