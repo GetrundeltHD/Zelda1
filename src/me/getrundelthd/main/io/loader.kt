@@ -129,7 +129,7 @@ object FontLoader {
 
 object NPCSpriteLoader {
 
-    val sprites : Array<BufferedImage>
+    val sprites: Array<BufferedImage>
 
     init {
         val W = 4
@@ -178,6 +178,7 @@ fun loadScreen(p: Path): Screen {
         val mapPointers = pointers.split(",")
 
         val tiles = Array<Tile?>(TILES_PER_ROW * TILES_PER_COL) { null }
+        val extraTiles = mutableListOf<Tile>()
 
         var index = 0
         for (j in 0 until TILES_PER_COL) {
@@ -240,7 +241,7 @@ fun loadScreen(p: Path): Screen {
             return Portal(posx, posy, data[5].startsWith("c"), newX, newY, nextS)
         }
 
-        fun loadNPC(data: List<String>) : Entity {
+        fun loadNPC(data: List<String>): Entity {
 
             val posX = data[1].toDouble() * ENTITY_SIZE
             val posY = data[2].toDouble() * ENTITY_SIZE
@@ -261,6 +262,31 @@ fun loadScreen(p: Path): Screen {
             return NPC(posX, posY, sprites, text)
         }
 
+        fun loadInvisBlock(data: List<String>): List<Tile> {
+            val posX = data[1].toInt() * TILE_SIZE
+            val invisSprite = OverworldSpriteLoader.sprites[87]
+
+            if (data[2].contains("[")) {
+                val posData = data[2]
+                        .replace("[", "")
+                        .replace("]", "")
+                        .split("-")
+                        .map { it.toInt() }
+
+                val blocks = mutableListOf<Tile>()
+
+                for (i in posData[0] until posData[1]) {
+                    blocks.add(Tile(posX * TILE_SIZE, i * TILE_SIZE, invisSprite))
+                }
+
+                return blocks
+            } else {
+                val posY = data[2].toDouble() * TILE_SIZE
+
+                return listOf(Tile(posX.toInt(), posY.toInt(), invisSprite))
+            }
+        }
+
         while (line != null) {
 
             val data = line.split(" ")
@@ -268,6 +294,7 @@ fun loadScreen(p: Path): Screen {
             when (data[0]) {
                 "p" -> portals.add(loadPortal(data))
                 "npc" -> entities.add(loadNPC(data))
+                "invis" -> extraTiles.addAll(loadInvisBlock(data))
             }
 
             line = reader.readLine()
