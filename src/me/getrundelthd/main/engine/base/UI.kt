@@ -3,12 +3,14 @@ package me.getrundelthd.main.engine.base
 import me.getrundelthd.main.*
 import me.getrundelthd.main.engine.GAMESTATE
 import me.getrundelthd.main.engine.Player
+import me.getrundelthd.main.io.loadScreen
 import java.awt.Color
 import java.awt.Font
 import java.awt.Graphics
 import java.awt.event.KeyEvent
 import java.awt.event.KeyListener
 import java.awt.event.KeyEvent.*
+import java.nio.file.Paths
 
 interface UI : Drawable
 
@@ -85,6 +87,16 @@ class Console : UI {
 
                 player.x = posX
                 player.y = posY
+            },
+            Command("setmap", 1){
+
+                val mapName = it[0]
+
+                // load the next screen
+                val next = loadScreen(Paths.get("res", "maps", "overworld", "$mapName.txt"))
+                scrManager.destroyScreen()
+                scrManager.current = next
+                scrManager.initNewScreen()
             }
     )
 
@@ -119,10 +131,10 @@ class Console : UI {
         }
 
         return when {
-            found && !error -> 0
             !found -> -1
+            found && !error -> 0
             found && error -> -2
-            else -> 0
+            else -> -1
         }
 
     }
