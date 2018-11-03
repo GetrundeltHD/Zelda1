@@ -23,7 +23,7 @@ import java.util.*
 import javax.imageio.ImageIO
 import kotlin.collections.ArrayList
 
-const val overWorldSpritesPath = "./res/gfx/sprites/overworld_extended1.png"
+const val overWorldSpritesPath = "./res/gfx/sprites/overworld_extended2.png"
 const val overWorldMetaPath = "./res/gfx/sprites/metaData_overworld.txt"
 const val linkSpritesPath = "./res/gfx/sprites/link.png"
 const val NPCSpritesPath = "./res/gfx/sprites/NPCs.png"

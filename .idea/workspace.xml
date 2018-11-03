@@ -10,11 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57445c9b-e861-4831-81e2-ed0e9567244a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/res/gfx/sprites/overworld_extended2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/gfx/sprites/metaData_overworld.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/gfx/sprites/metaData_overworld.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/caves/cH8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/maps/caves/cH8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +28,8 @@
       <file leaf-file-name="loader.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="296" column="45" selection-start-line="296" selection-start-column="45" selection-end-line="296" selection-end-column="45" />
+            <state relative-caret-position="247">
+              <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
               <folding>
                 <element signature="e#34#812#0" expanded="true" />
               </folding>
@@ -333,6 +329,14 @@
       <option name="presentableId" value="Default" />
       <updated>1533132896282</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added the Ability of placing invisible Blocks in the World">
+      <created>1541236410195</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541236410195</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -341,18 +345,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32413793" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49951172" visible="true" weight="0.32413793" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5004883" side_tool="true" weight="0.3674877" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5004883" side_tool="true" visible="true" weight="0.32413793" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49951172" visible="true" weight="0.31428573" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49951172" weight="0.31428573" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32906404" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2109375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2109375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -399,6 +403,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added the Ability of placing invisible Blocks in the World" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the Ability of placing invisible Blocks in the World" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -697,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/io/loader.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="296" column="45" selection-start-line="296" selection-start-column="45" selection-end-line="296" selection-end-column="45" />
+        <state relative-caret-position="247">
+          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
           <folding>
             <element signature="e#34#812#0" expanded="true" />
           </folding>
