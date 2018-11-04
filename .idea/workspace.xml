@@ -6,20 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57445c9b-e861-4831-81e2-ed0e9567244a" name="Default" comment="Added setmap command">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Getrundelt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/items/items.kt" afterDir="false" />
+    <list default="true" id="57445c9b-e861-4831-81e2-ed0e9567244a" name="Default" comment="Some cleaning and added tasks to the todo list">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/Player$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/Player$PlayerInputHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/Player$PlayerInputHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/Player$draw$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/Player$draw$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/map/Screen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/map/Screen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/map/ScreenManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2dGame/me/getrundelthd/main/engine/map/ScreenManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/base/UI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/base/UI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo" beforeDir="false" afterPath="$PROJECT_DIR$/todo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,43 +25,47 @@
     <session id="-1125757643">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="java" value="3" />
-          <entry key="kt" value="18" />
-          <entry key="todo" value="2" />
+          <entry key="kt" value="22" />
+          <entry key="todo" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="3" />
-          <entry key="Kotlin" value="18" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Kotlin" value="22" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="22" />
           <entry key="java" value="91" />
-          <entry key="kt" value="5347" />
+          <entry key="kt" value="5361" />
           <entry key="todo" value="87" />
-          <entry key="txt" value="86" />
+          <entry key="txt" value="157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="91" />
-          <entry key="Kotlin" value="5347" />
-          <entry key="PLAIN_TEXT" value="173" />
+          <entry key="Kotlin" value="5361" />
+          <entry key="PLAIN_TEXT" value="266" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -82,11 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="-1787">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="e#30#572#0" expanded="true" />
               </folding>
@@ -97,8 +91,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todo">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="161">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -106,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+            <state relative-caret-position="368">
+              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -179,12 +182,13 @@
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/Fonts.java" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/enums.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/drawing/DrawHandler.kt" />
-        <option value="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/base/UI.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/map/Screen.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/items/items.kt" />
         <option value="$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt" />
         <option value="$PROJECT_DIR$/todo" />
+        <option value="$PROJECT_DIR$/src/me/getrundelthd/main/main.kt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -195,8 +199,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="38" />
-    <option name="y" value="-24" />
+    <option name="x" value="35" />
+    <option name="y" value="-25" />
     <option name="width" value="2420" />
     <option name="height" value="1310" />
   </component>
@@ -205,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,12 +267,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541331934243" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541335044482" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -394,13 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541260506630</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some cleaning and added tasks to the todo list">
+      <created>1541331975507</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1541331975507</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1128" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49667996" weight="0.14585415" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49667996" visible="true" weight="0.14735265" />
       <window_info id="Structure" order="1" sideWeight="0.50332004" side_tool="true" weight="0.14585415" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -409,14 +423,14 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32906404" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.492008" weight="0.27942583" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.492008" visible="true" weight="0.27828747" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39901477" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.27942583" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.507992" side_tool="true" weight="0.28440368" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3291866" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3284169" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.492008" weight="0.32313967" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24975026" />
@@ -428,6 +442,35 @@
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32958984" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49667996" visible="true" weight="0.14585415" />
+      <window_info id="Structure" order="1" sideWeight="0.50332004" side_tool="true" weight="0.14585415" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.50332004" side_tool="true" weight="0.14585415" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32906404" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.492008" visible="true" weight="0.2784689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39901477" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27942583" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.507992" side_tool="true" weight="0.28440368" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3284169" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.492008" weight="0.32313967" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24975026" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32967034" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32958984" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -439,7 +482,8 @@
     <MESSAGE value="Removed unnecessary println from debugging" />
     <MESSAGE value="Added a Console to the game" />
     <MESSAGE value="Added setmap command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added setmap command" />
+    <MESSAGE value="Some cleaning and added tasks to the todo list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some cleaning and added tasks to the todo list" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -602,9 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="173" selection-start-line="173" selection-end-line="173" />
-          <folding>
-            <element signature="e#34#812#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -629,10 +670,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/base/UI.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="-1787">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
             <element signature="e#30#572#0" expanded="true" />
           </folding>
@@ -641,22 +696,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/Player.kt">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/me/getrundelthd/main/engine/base/UI.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        <state relative-caret-position="23">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -727,7 +775,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>IntelliJ IDEA Community Edition IC-182.4892.20</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

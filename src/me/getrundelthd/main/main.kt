@@ -29,7 +29,7 @@ var currFps = 0
 // TODO: set game state to start when played first time on save state
 var mainGameState = GAMESTATE.MAIN
 
-fun main(args : Array<String>) {
+fun main(args: Array<String>) {
 
     scrManager.initNewScreen()
     drawHandler.objects.add(player)
@@ -41,7 +41,7 @@ fun main(args : Array<String>) {
     var fps = 0
     var lastFpsTime = 0L
 
-    while(true) {
+    while (true) {
 
         val now = System.nanoTime()
         val updateLength = now - lastLoopTime
@@ -51,7 +51,7 @@ fun main(args : Array<String>) {
         lastFpsTime += updateLength
         fps++
 
-        if(lastFpsTime >= 1000000000) {
+        if (lastFpsTime >= 1000000000) {
             lastFpsTime = 0
             currFps = fps
             fps = 0
@@ -79,9 +79,9 @@ fun draw() {
 var blackPerc = 100.0
 var caveAnimCount = 0.0
 
-fun update(delta : Double) {
+fun update(delta: Double) {
 
-    when(mainGameState) {
+    when (mainGameState) {
 
         GAMESTATE.MENU -> {
 
@@ -93,7 +93,7 @@ fun update(delta : Double) {
 
         GAMESTATE.START -> {
             blackPerc -= delta
-            if(blackPerc <= 0.0)
+            if (blackPerc <= 0.0)
                 mainGameState = GAMESTATE.MAIN
         }
         GAMESTATE.SCREEN_TRANSITION -> {
@@ -103,7 +103,7 @@ fun update(delta : Double) {
         GAMESTATE.CAVE_ENTERING -> {
 
             val activePortal = scrManager.current.portals.filter { it.entered }[0]
-            if(currentEnteringTime >= CAVE_ENTERING_TIME) {
+            if (currentEnteringTime >= CAVE_ENTERING_TIME) {
                 // set new screen to cave
                 scrManager.destroyScreen()
                 scrManager.current = activePortal.destScreen
@@ -118,7 +118,7 @@ fun update(delta : Double) {
 
             // do player anim
             player.y = activePortal.y + TILE_SIZE * .15 + (TILE_SIZE * (currentEnteringTime / CAVE_ENTERING_TIME) - .15)
-            if(caveAnimCount >= 8.0) {
+            if (caveAnimCount >= 8.0) {
                 player.animator.state = if (player.animator.state == 5) 4 else 5
                 player.sprite = player.animator.sprites[player.animator.state]
                 caveAnimCount = 0.0
