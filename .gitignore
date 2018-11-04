@@ -3,6 +3,7 @@
 .idea/
 out/
 src/META-INF/
+2dGame.iml
 
 # git files
 .gitignore
