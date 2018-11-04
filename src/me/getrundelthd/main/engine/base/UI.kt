@@ -2,7 +2,6 @@ package me.getrundelthd.main.engine.base
 
 import me.getrundelthd.main.*
 import me.getrundelthd.main.engine.GAMESTATE
-import me.getrundelthd.main.engine.Player
 import me.getrundelthd.main.io.loadScreen
 import java.awt.Color
 import java.awt.Font
@@ -19,7 +18,7 @@ const val CURSOR_COOLDOWN = 50.0
 
 class Console : UI {
 
-    var cursorTimer = 0.0
+    private var cursorTimer = 0.0
 
     val consoleHandler = object : KeyListener {
         override fun keyTyped(e: KeyEvent?) {
@@ -36,12 +35,12 @@ class Console : UI {
 
         override fun keyPressed(e: KeyEvent?) {
 
-            if(e == null) return
+            if (e == null) return
 
             when (e.keyCode) {
 
                 VK_BACK_SPACE ->
-                    if(buffer.isNotEmpty())
+                    if (buffer.isNotEmpty())
                         console.buffer = console.buffer.substring(0, console.buffer.length - 1)
                 VK_ESCAPE ->
                     console.buffer = ""
@@ -88,12 +87,13 @@ class Console : UI {
                 player.x = posX
                 player.y = posY
             },
-            Command("setmap", 1){
+            Command("setmap", 1) {
 
                 val mapName = it[0]
 
                 // load the next screen
                 val next = loadScreen(Paths.get("res", "maps", "overworld", "$mapName.txt"))
+
                 scrManager.destroyScreen()
                 scrManager.current = next
                 scrManager.initNewScreen()
@@ -153,7 +153,7 @@ class Console : UI {
         g.font = java.awt.Font("Courier New", Font.PLAIN, (consoleHeight * 0.5).toInt())
         g.drawString(buffer, 5, (drawHandler.height - consoleHeight * .3).toInt())
 
-        if(cursorTimer * 3 > CURSOR_COOLDOWN) {
+        if (cursorTimer * 3 > CURSOR_COOLDOWN) {
             // draw Cursor
             g.fillRect(g.fontMetrics.stringWidth(buffer) + 10, (drawHandler.height - consoleHeight * 0.7).toInt(),
                     3, (consoleHeight * .5).toInt())
@@ -174,7 +174,7 @@ class Console : UI {
     fun update(delta: Double) {
         cursorTimer += delta
 
-        if(cursorTimer > CURSOR_COOLDOWN)
+        if (cursorTimer > CURSOR_COOLDOWN)
             cursorTimer = 0.0
     }
 

@@ -2,6 +2,7 @@ package me.getrundelthd.main.engine
 
 import me.getrundelthd.main.console
 import me.getrundelthd.main.drawHandler
+import me.getrundelthd.main.engine.items.ITEMS
 import me.getrundelthd.main.mainGameState
 import me.getrundelthd.main.utils.flip
 import java.awt.Color
@@ -19,8 +20,9 @@ const val CONSOLE_COOLDOWN = 20.0
 class Player(x: Double, y: Double, sprites: Array<BufferedImage>) :
         Entity(x, y, ENTITY_SIZE, ENTITY_SIZE, 0, sprites) {
 
-    val animator: Animator
+    val getheredItems = listOf<ITEMS>()
 
+    val animator: Animator
     var consoleTimer = CONSOLE_COOLDOWN
 
     init {
@@ -35,6 +37,7 @@ class Player(x: Double, y: Double, sprites: Array<BufferedImage>) :
                 flip(sprites[4])
         )
 
+        // init the animator with the animation rules
         animator = Animator(animSprites, 12.5) {
             if (!(velX == 0.0 && velY == 0.0)) {
                 val state = it.state

@@ -55,16 +55,14 @@ class Screen {
 class ScreenManager(var current: Screen, val player: Player) {
 
     var next: Screen? = null
-    var offSetX = 0.0
-    var offSetY = 0.0
+    private var offSetX = 0.0
+    private var offSetY = 0.0
 
-    var dir: DIR? = null
+    private var dir: DIR? = null
 
-    val transVel = 20.0
+    private val transVel = 20.0
 
     fun update(delta: Double) {
-
-
         when (mainGameState) {
 
             GAMESTATE.MAIN -> {
