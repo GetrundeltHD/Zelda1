@@ -1,2 +1,8 @@
+
+# IntelliJ files
 .idea/
+out/
+src/META-INF/
+
+# git files
 .gitignore
